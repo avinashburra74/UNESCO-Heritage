@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UNESCO HERITAGE</title>
+    <style>
+        /* General Setup */
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 0; color: #333; scroll-behavior: smooth; }
+        
+        /* Navigation Bar */
+        nav { 
+            background: white; 
+            padding: 15px 8%; 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+            border-bottom: 1px solid #eaeaea; 
+            position: sticky; 
+            top: 0; 
+            z-index: 1000; 
+        }
+        nav h1 { color: #4b6584; margin: 0; font-size: 22px; letter-spacing: 1px; }
+        nav ul { list-style: none; display: flex; margin: 0; }
+        nav ul li { margin-left: 25px; font-size: 14px; font-weight: 600; }
+        nav ul li a { text-decoration: none; color: #777; transition: 0.3s; }
+        nav ul li a:hover { color: #2d98da; }
+
+        /* Section Styling */
+        .section { padding: 80px 10%; text-align: center; }
+        .section-title { font-size: 32px; margin-bottom: 50px; position: relative; display: inline-block; color: #2c3e50; }
+        .section-title::after { 
+            content: ''; 
+            width: 60px; 
+            height: 4px; 
+            background: #20bf6b; 
+            position: absolute; 
+            bottom: -15px; 
+            left: 50%; 
+            transform: translateX(-50%); 
+        }
+
+        /* Hero Section */
+        .hero { 
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+                        url('https://www.worldtravelguide.net/wp-content/uploads/2019/04/shu-Peru-Machu-Picchu-389136313-1440x823.jpg');
+            background-size: cover; 
+            background-position: center; 
+            height: 600px;
+            display: flex; 
+            flex-direction: column; 
+            justify-content: center; 
+            align-items: center;
+            color: white; 
+            text-align: center; 
+            padding: 0 20px;
+        }
+        .hero h2 { font-size: 48px; margin-bottom: 15px; text-transform: uppercase; text-shadow: 2px 2px 4px rgba(0,0,0,0.5); }
+        .hero p { max-width: 750px; font-size: 18px; opacity: 0.9; line-height: 1.6; }
+        .hero-btn { 
+            margin-top: 25px; 
+            padding: 12px 35px; 
+            background: #20bf6b; 
+            color: white; 
+            text-decoration: none; 
+            border-radius: 50px; 
+            font-weight: bold; 
+            transition: 0.3s;
+        }
+        .hero-btn:hover { background: #1b9e58; transform: translateY(-2px); }
+
+        /* About Section - Reduced Image Size */
+        .about-container { display: flex; align-items: center; text-align: left; gap: 40px; }
+        .about-text { flex: 2; line-height: 1.8; color: #555; font-size: 16px; }
+        .about-img { 
+            flex: 1; 
+            max-width: 400px; /* Reduced width */
+            width: 100%; 
+            border-radius: 12px; 
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1); 
+            object-fit: cover;
+        }
+
+        /* Storyboard Section */
+        #story { background-color: #f4f7f6; }
+        .story-frame {
+            background: white;
+            padding: 15px;
+            border-radius: 12px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+            width: 100%;
+            box-sizing: border-box;
+        }
+        iframe { border: none; border-radius: 8px; }
+
+        /* Contact Section */
+        #contact {
+            background: #ffffff; 
+            padding: 100px 10%;
+        }
+        .contact-wrapper { display: flex; gap: 40px; text-align: left; margin-top: 20px; }
+        .contact-info { 
+            flex: 1; 
+            background: #fafafa; 
+            padding: 30px; 
+            border-radius: 12px; 
+            box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+            border: 1px solid #eee;
+        }
+        .contact-form { flex: 2; display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+        .contact-form input, .contact-form textarea { width: 100%; padding: 15px; border: 1px solid #ccc; border-radius: 8px; box-sizing: border-box; }
+        .contact-form textarea { grid-column: span 2; height: 140px; resize: none; }
+        .btn-send { grid-column: span 2; background: #20bf6b; color: white; border: none; padding: 18px; cursor: pointer; font-weight: bold; border-radius: 8px; transition: 0.3s; }
+        .btn-send:hover { background: #1b9e58; }
+
+        .map-box { margin-top: 20px; width: 100%; height: 200px; border-radius: 8px; overflow: hidden; }
+        footer { background: #2c3e50; color: white; text-align: center; padding: 25px; font-size: 14px; }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <h1>UNESCO HERITAGE</h1>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#story">Storyboard</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="hero" id="home">
+        <h2>Welcome to UNESCO Heritage</h2>
+        <p>Analyze the distribution of UNESCO World Heritage Sites by year, focusing on cultural, natural, and mixed categories across the globe.</p>
+        <a href="#about" class="hero-btn">Explore More</a>
+    </div>
+
+    <div class="section" id="about">
+        <h3 class="section-title">UNESCO HERITAGE PROJECT</h3>
+        <div class="about-container">
+            <div class="about-text">
+                <p>
+                    The UNESCO Heritage Project is dedicated to identifying and preserving cultural and natural heritage around the world. Since 1972, we have worked to promote international collaboration for the conservation of World Heritage sites. Our efforts ensure that ancient monuments and natural parks are protected for future generations. Join us in safeguarding these treasures, which represent the diversity and history of our shared human experience and the natural beauty of our planet.
+                </p>
+            </div>
+            <img src="https://culturetourist.com/wp-content/uploads/2023/10/Photo-by-Clement-Remond-on-Unsplash-1.webp" alt="UNESCO Site" class="about-img">
+        </div>
+    </div>
+
+    <div class="section" id="story">
+        <h3 class="section-title">UNESCO STORYBOARD</h3>
+        <p style="margin-bottom: 40px;">Interactive visual journey through the heritage data.</p>
+        <div class="story-frame">
+            <iframe 
+                src="https://public.tableau.com/views/Book1_17713043932030/Story1?:showVizHome=no&:embed=true" 
+                width="100%" 
+                height="800">
+            </iframe>
+        </div>
+    </div>
+
+    <div class="section" id="contact">
+        <h3 class="section-title">CONTACT US</h3>
+        <div class="contact-wrapper">
+            <div class="contact-info">
+                <p><strong>Location:</strong><br> UNESCO Headquarters, Paris, France</p>
+                <p><strong>Email:</strong><br> visits@unesco.org</p>
+                <p><strong>Call:</strong><br> +33 (0)1 45 68 10 00</p>
+                <div class="map-box">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2625.4751833132057!2d2.304543715673998!3d48.85015117928732!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e6702677d24225%3A0x6d9f7a77e923e3e!2sUNESCO!5e0!3m2!1sen!2sfr!4v1620000000000!5m2!1sen!2sfr" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+
+            <form class="contact-form" action="/submit_contact" method="POST">
+                <input type="text" name="name" placeholder="Name" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <input type="text" name="subject" placeholder="Subject" style="grid-column: span 2;">
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn-send">Send Message</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2026 UNESCO Heritage Project. Powered by Flask.</p>
+    </footer>
+
+</body>
+</html>
